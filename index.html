@@ -69,50 +69,50 @@
         -->
         <section title="">
           <br><br>
-          <h2>Intro to Firebase</h2>
+          <h2>Introduksjon til Firebase</h2>
           <img src="images/firebase-logo.png" class="no-style">
           <br> <br>
           <p>
-            <h6>YOUR_NAME / <a href="http://twitter.com/YOUR_TWITTER_HANDLE">@YOUR_TWITTER_HANDLE</a></h6>
+            <h6>HÅKON NILSEN / <a href="http://twitter.com/hnilsen">@hnilsen</a></h6>
 
           </p>
         </section>
 
         <section>
-          <p class="text-cream text-medium">The <span class="text-discs">Realtime Backend</span></p>
-          <p class="text-cream text-medium">for your App</p>
+          <p class="text-cream text-medium">En <span class="text-discs">Realtime Backend</span></p>
+          <p class="text-cream text-medium">for din app</p>
         </section>
 
         <section>
-          <p class="text-medium">Creating an app shouldn't require managing complex infrastructure.</p>
+          <p class="text-medium">Å lage en app bør ikke innebære vedlikehold av kompleks infrastruktur.</p>
         </section>
 
         <section>
-          <h3>The Full Stack</h3>
+          <h3>Stacken</h3>
           <img src="images/full-stack.png" alt="The Full Stack" class="no-style" />
         </section>
 
         <section>
-          <p class="text-small">The full stack is never really that simple</p>
+          <p class="text-small">Stacken er sjelden så enkel</p>
           <img src="images/backend-reqs.gif" alt="" class="white-bg no-style" />
         </section>
 
         <section>
-          <p class="text-small">... and neither is the client side</p>
+          <p class="text-small">... og det er ikke klientsiden heller</p>
           <br><br>
           <img src="images/clients.png" alt="gdocs" class="no-style" />
         </section>
 
         <section>
-					<p class="text-medium era-point">The user doesn't care about your backend</p>
+					<p class="text-medium era-point">Brukeren bryr seg ikke om backend</p>
 				</section>
 
         <section>
-          <h4>The user expects</h4>
-          <p class="text-small era-point">Speed</p>
+          <h4>Brukeren forventer</h4>
+          <p class="text-small era-point">Hastighet</p>
           <p class="text-small era-point">Offline</p>
-          <p class="text-small era-point">Multi-platform</p>
-          <p class="text-small era-point">Simple Authentication</p>
+          <p class="text-small era-point">Multi-plattform</p>
+          <p class="text-small era-point">Enkel autentisering</p>
         </section>
 
         <!--
@@ -122,12 +122,12 @@
           <h3>Firebase</h3>
           <img src="images/firebase-logo.png" class="no-style era-point">
           <br>
-          <p class="text-cream">The <span class="text-discs">Realtime Backend</span></p>
-          <p class="text-cream">for your App</p>
+          <p class="text-cream">En <span class="text-discs">Realtime Backend</span></p>
+          <p class="text-cream">for din app</p>
         </section>
 
         <section>
-          <h4>The Firebase Backend</h4>
+          <h4>Firebase Backend</h4>
           <img src="images/data-box.png" class="no-style framework-logo">
           <img src="images/login-box.png" class="no-style framework-logo">
           <img src="images/security-box.png" class="no-style framework-logo">
@@ -135,8 +135,8 @@
         </section>
 
         <section>
-					<h3>Forget the Server</h3>
-					<p class="era-point">Firebase apps can run on client-side code only</p>
+					<h3>Glem serveren</h3>
+					<p class="era-point">Firebase-apper kan kjøre på kun klient-kode</p>
 					<br>
 					<img src="/images/platforms.png" alt="" class="no-style framework-logo">
 				</section>
@@ -148,7 +148,7 @@
         <section>
           <h2>Cloud database</h2>
           <p class="era-point">NoSQL data-store</p>
-          <p class="era-point">Returns JSON from a RESTful API</p>
+          <p class="era-point">Returnerer JSON fra en RESTful API</p>
         </section>
 
         <section>
@@ -158,8 +158,8 @@
         <section>
           <h2>Realtime Data</h2>
           <p class="era-point text-cream">
-            Whenever <span class="text-discs">data is  updated in Firebase</span>,
-            it sends the update down to every <span class="text-tarheel">listening client</span>
+            Når <span class="text-discs">data blir oppdatert i Firebase</span>,
+            sendes oppdateringen ned til alle <span class="text-tarheel">klienter som lytter</span>
           </p>
         </section>
 
@@ -168,12 +168,12 @@
         </section>
 
         <section>
-          <p class="text-medium">SDKs</p>
+          <p class="text-medium">SDKer</p>
           <img src="/images/platforms.png" alt="" class="no-style">
         </section>
 
         <section>
-          <h2>Store Data</h2>
+          <h2>Lagre data</h2>
           <code-box langs="JavaScript,Swift,Java">
             <code-example lang="JavaScript">
 var ref = new Firebase("https://&lt;your-firebase-app&gt;.firebaseio.com/message");
@@ -192,7 +192,7 @@ ref.setValue("All the things");
         </section>
 
         <section>
-          <h2>Sync Data</h2>
+          <h2>Synk data</h2>
 
           <code-box langs="JavaScript,Swift,Java">
             <code-example lang="JavaScript">
@@ -227,31 +227,32 @@ ref.addValueEventListener(new ValueEventListener() {
         </section>
 
         <section>
-          <h3>Intermittent Offline</h3>
+          <h3>Midlertidig Offline</h3>
 
-          <p class="text-small">What happens when you go through a tunnel?</p>
+          <p class="text-small">Hva skjer når du kjører gjennom en tunnel?</p>
           <br><br>
           <p class="text-small fragment">
-            Firebase clients store a local cache of your data. When the user
-            goes offline, the app still works as expected with the local cache.
+            Firebase klientene lagrer en lokal cache av dataene. Når en bruker
+            går offline vil appen fortsatt virke som forventet med den lokale
+            cachen.
           </p>
 
         </section>
 
         <section>
-          <h3>Extended Offline</h3>
+          <h3>Utvidet Offline</h3>
 
-          <p class="text-small">What happens when you go on a flight?</p>
+          <p class="text-small">Hva skjer når du går på et fly?</p>
           <br><br>
           <p class="text-small fragment">
-            On mobile, Firebase persists data to a local store. The app will continue
-            to work even across app restarts.
+            På mobil vil Firebase lagre data til et lokalt lager. Appen vil fortsette
+            å virke selv om du restarter appen.
           </p>
 
         </section>
 
         <section>
-          <h3>One line of code</h3>
+          <h3>Én linje kode!</h3>
 
           <code-box langs="Swift,Java">
             <code-example lang="Swift">
@@ -271,11 +272,11 @@ Firebase.getDefaultConfig().setPersistenceEnabled(true);
         <section>
 
           <p class="era-point text-small">
-            Firebase supports several forms of authentication
+            Firebase støtter mange former for autentisering
           </p>
 
           <p class="era-point fragment">
-            Email &amp; Password
+            Email &amp; Passord
           </p>
 
           <p class="era-point fragment">
@@ -295,18 +296,18 @@ Firebase.getDefaultConfig().setPersistenceEnabled(true);
           </p>
 
           <p class="era-point fragment">
-             Anonymous
+             Anonym innlogging
           </p>
 
           <p class="era-point fragment">
-             ...and even custom backends
+             ...og egne backender
           </p>
 
         </section>
 
         <section class="hasCode">
 
-          <h3>Authentication</h3>
+          <h3>Autentisering</h3>
 
           <code-box langs="JavaScript,Swift,Java">
             <code-example lang="JavaScript" prop="one">
@@ -348,7 +349,7 @@ ref.authWithOAuthToken("google", "&lt;OAuth Token&gt;", new Firebase.AuthResultH
 
         <section class="hasCode">
 
-          <h3>Authentication</h3>
+          <h3>Autentisering</h3>
 
           <code-box langs="JavaScript,Swift,Java">
             <code-example lang="JavaScript" prop="one">
@@ -395,16 +396,16 @@ ref.authWithOAuthToken("google", "&lt;OAuth Token&gt;", new Firebase.AuthResultH
         </section>
 
         <section>
-          <h3>Security</h3>
+          <h3>Sikkerhet</h3>
           <p class="era-point">
-            By default everyone can write and read
+            Standardoppsettet er at alle kan lese og skrive
           </p>
 					<pre>
 						<code data-trim class="json">
 {
   "rules": {
     ".read": true,
-    ".write": true,
+    ".write": true
   }
 }
 						</code>
@@ -413,14 +414,14 @@ ref.authWithOAuthToken("google", "&lt;OAuth Token&gt;", new Firebase.AuthResultH
 
         <section>
           <p class="era-point">
-            Everyone can read, but no one can write
+            Alle kan lese, men ingen kan skrive
           </p>
 					<pre>
 						<code data-trim class="json">
 {
   "rules": {
     ".read": true,
-    ".write": false,
+    ".write": false
   }
 }
 						</code>
@@ -429,7 +430,7 @@ ref.authWithOAuthToken("google", "&lt;OAuth Token&gt;", new Firebase.AuthResultH
 
         <section>
           <p class="era-point">
-            Secure specific parts of your Firebase
+            Sikkerhet på spesifikke deler av din Firebase
           </p>
 					<pre>
 						<code data-trim class="json">
@@ -447,7 +448,7 @@ ref.authWithOAuthToken("google", "&lt;OAuth Token&gt;", new Firebase.AuthResultH
 
         <section>
           <p class="era-point">
-            Special variables to power authentication
+            Spesielle variabler som hjelper med autentisering
           </p>
 					<pre>
 						<code data-trim class="json">
@@ -466,8 +467,8 @@ ref.authWithOAuthToken("google", "&lt;OAuth Token&gt;", new Firebase.AuthResultH
 
 
         <section>
-					<h3>Security</h3>
-					<p class="text-small">Use $wildcards as route parameters</p>
+					<h3>Sikkerhet</h3>
+					<p class="text-small">Bruk $wildcards som routingparametere</p>
 					<pre>
 						<code data-trim class="json">
 {
@@ -493,11 +494,11 @@ ref.authWithOAuthToken("google", "&lt;OAuth Token&gt;", new Firebase.AuthResultH
 
   			<section>
   					<h3>Hosting</h3>
-  					<p class="text-small">When you're ready to launch</p>
+  					<p class="text-small">Når du er klar til å gå 'live'</p>
   					<pre>
   						<code data-trim class="bash">
 firebase init
-# select your firebase
+# velg din firebase
 firebase deploy
 # party time
   						</code>
@@ -514,10 +515,6 @@ firebase deploy
 				</section>
 
         <section>
-          <h1>(Optional) Live Coding</h1>
-        </section>
-
-        <section>
 					<h3>Tooling & Integration</h3>
 				</section>
 
@@ -532,7 +529,7 @@ firebase deploy
 
         <section>
 					<h3>AngularFire</h3>
-					<p class="text">A chat app in AngularFire</p>
+					<p class="text">En chat-app i AngularFire</p>
 					<pre>
 						<code data-trim class="javascript">
 var app = app.module('app', ['firebase']);
@@ -557,12 +554,12 @@ app.controller('ChatCtrl', function($scope, $firebaseArray) {
 
         <section>
 					<h3>Geofire</h3>
-					<p class="text-smaller">Store and query items based on their geographic location in realtime</p>
+					<p class="text-smaller">Lagre og hent basert på geografisk lokasjon i realtime</p>
 					<iframe src="https://geofire.firebaseapp.com/sfVehicles/" height="450px" width="100%"></iframe>
 				</section>
 
 				<section>
-					<h3>Well Documented</h3>
+					<h3>Godt dokumentert</h3>
 					<a class="text-tarheel" href="https://firebase.com/docs">
 						<img src="images/docs-site.png">
 					</a>
@@ -585,30 +582,30 @@ app.controller('ChatCtrl', function($scope, $firebaseArray) {
           <h4>Firebase in Production</h4>
           <ul>
             <li class="era-point">
-              <span class="text-discs">Twitch.tv</span> - Notifying users when realtime streams go live
+              <span class="text-discs">Twitch.tv</span> - Notifikasjon når en stream går online
             </li>
             <li class="era-point">
-              <span class="text-discs">Citrix</span> - Manages presence in GoTo Meeting
+              <span class="text-discs">Citrix</span> - Håndterer tilstedeværelse i GoToMeeting
             </li>
             <li class="era-point">
-              <span class="text-discs">CBS</span> - Powers the chat for Big Brother's Live Stream
+              <span class="text-discs">CBS</span> - Motoren bak chatten til Big Brother's Live Stream
             </li>
             <li class="era-point">
-              <span class="text-discs">Warby Parker</span> - Powering pneumatic tubes
+              <span class="text-discs">InVision</span> - Motoren bak realtime presentasjonene
             </li>
           </ul>
         </section>
 
         <section>
-					<h2>Focus on your app</h2>
-					<p class="era-point">The user doesn't care about the backend</p>
-					<p class="era-point">What matters is that your app is
-						<span class="text-tarheel">fast and enjoyable</span>
+					<h2>Fokuser på appen din</h2>
+					<p class="era-point">Brukeren bryr seg ikke om backend</p>
+					<p class="era-point">Det som betyr noe er at appen din er
+						<span class="text-tarheel">rask og digg å bruke</span>
 					</p>
 				</section>
 
         <section>
-					<h2>Complete Platform</h2>
+					<h2>Fullstendig Plattform</h2>
 					<img src="images/data-box.png" class="no-style framework-logo">
 					<img src="images/security-box.png" class="no-style framework-logo">
 					<img src="images/login-box.png" class="no-style framework-logo">
@@ -616,13 +613,12 @@ app.controller('ChatCtrl', function($scope, $firebaseArray) {
 				</section>
 
         <section>
-          <h1>ASK ME QUESTIONS</h1>
-          <h5>YOUR_NAME / <a href="http://twitter.com/YOUR_TWITTER_HANDLE">@YOUR_TWITTER_HANDLE</a></h5>
-          <h5>YOUR_JOB / <a href="http://twitter.com/YOUR_COMPANY_TWITTER_HANDLE">@YOUR_COMPANY</a></h5>
+          <h1>Spørsmål?</h1>
+          <h5>Håkon Nilsen / <a href="http://twitter.com/hnilsen">@hnilsen</a></h5>
         </section>
 
         <section>
-          <h2>Assets Used</h2>
+          <h2>Bilder som er brukt</h2>
 
           <ul>
             <li><a href="https://thenounproject.com/search/?q=database&i=9658">https://thenounproject.com/search/?q=database&i=9658</a></li>
